@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git & GitHub - Zero to Hero Guide</title>
+    <link rel="stylesheet" href="git-github-styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">🚀 Git & GitHub Guide</div>
+        <ul class="nav-links">
+          <li>
+            <a href="#importance" onclick="scrollToSection('importance')"
+              >Why Git?</a
+            >
+          </li>
+          <li>
+            <a
+              href="#company-scenario"
+              onclick="scrollToSection('company-scenario')"
+              >Company Scenario</a
+            >
+          </li>
+          <li>
+            <a href="#commands" onclick="scrollToSection('commands')"
+              >Commands</a
+            >
+          </li>
+          <li>
+            <a href="#interview" onclick="scrollToSection('interview')"
+              >Interview Prep</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>Master Git & GitHub 🎯</h1>
+        <p>From Complete Beginner to Professional Developer</p>
+        <button class="cta-button" onclick="scrollToSection('importance')">
+          Start Learning
+        </button>
+      </div>
+    </header>
+
+    <!-- WHY GIT & GITHUB SECTION -->
+    <section id="importance" class="section">
+      <div class="container">
+        <h2>🤔 Why is Git Important?</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">📚</div>
+            <h3>Version Control</h3>
+            <p>
+              Keep track of every change you make. Go back to any previous
+              version anytime.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">👥</div>
+            <h3>Team Collaboration</h3>
+            <p>
+              Multiple developers working on the same project without
+              overwriting each other's work.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔍</div>
+            <h3>History & Accountability</h3>
+            <p>
+              Know who changed what, when, and why. Perfect for debugging and
+              tracking progress.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🛡️</div>
+            <h3>Backup & Safety</h3>
+            <p>
+              Your code is safe. Stored locally and in the cloud. Never lose
+              your work.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🚀</div>
+            <h3>Industry Standard</h3>
+            <p>
+              <strong>100% of companies use Git.</strong> It's mandatory to
+              learn for any developer job.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">⚙️</div>
+            <h3>DevOps & Automation</h3>
+            <p>
+              Enables CI/CD pipelines, automated testing, and automatic
+              deployment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPANY SCENARIO SECTION -->
+    <section id="company-scenario" class="section bg-light">
+      <div class="container">
+        <h2>🏢 Real-World Company Scenario</h2>
+        <p class="intro-text">
+          Meet three junior developers working on a web project at TechCorp:
+        </p>
+
+        <div class="scenario-container">
+          <div class="developer-card">
+            <div class="dev-avatar">👨‍💻</div>
+            <h3>Abhimanyu</h3>
+            <p class="role">Frontend Developer</p>
+            <p class="description">
+              Builds the user interface and handles all styling
+            </p>
+          </div>
+          <div class="developer-card">
+            <div class="dev-avatar">👨‍💼</div>
+            <h3>Arun</h3>
+            <p class="role">Backend Developer</p>
+            <p class="description">Works on server logic and database</p>
+          </div>
+          <div class="developer-card">
+            <div class="dev-avatar">👨‍🔬</div>
+            <h3>Manoj</h3>
+            <p class="role">DevOps/Team Lead</p>
+            <p class="description">Manages repositories and deployment</p>
+          </div>
+        </div>
+
+        <div class="scenario-section">
+          <h3>📖 The Story: Building an E-Commerce Website</h3>
+          <div class="scenario-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <strong>Manoj creates a repository on GitHub</strong>
+                <p>
+                  He sets up a new project repository for the e-commerce site
+                </p>
+                <div class="code-block">
+                  <code>git init</code>
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <strong>All three clone the repository</strong>
+                <p>
+                  Abhimanyu, Arun, and Manoj each get a copy on their computers
+                </p>
+                <div class="code-block">
+                  <code
+                    >git clone https://github.com/techcorp/ecommerce.git</code
+                  >
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <strong>Abhimanyu creates a branch for homepage</strong>
+                <p>He doesn't touch the main code directly</p>
+                <div class="code-block">
+                  <code>git checkout -b feature/homepage-design</code>
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <strong>Arun creates a branch for payment system</strong>
+                <p>Meanwhile, Arun works independently on the backend</p>
+                <div class="code-block">
+                  <code>git checkout -b feature/payment-gateway</code>
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <strong>Abhimanyu makes changes and commits</strong>
+                <p>After adding new CSS and HTML files:</p>
+                <div class="code-block">
+                  <code>git add .</code>
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+                <div class="code-block">
+                  <code>git commit -m "Add responsive homepage design"</code>
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">6</div>
+              <div class="step-content">
+                <strong>Abhimanyu pushes to GitHub</strong>
+                <p>His work goes to the cloud for backup and review</p>
+                <div class="code-block">
+                  <code>git push origin feature/homepage-design</code>
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">7</div>
+              <div class="step-content">
+                <strong>Manoj reviews and merges the code</strong>
+                <p>
+                  Uses Pull Request to review the code before merging to main
+                </p>
+                <div class="code-block">
+                  <code>git merge feature/homepage-design</code>
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">8</div>
+              <div class="step-content">
+                <strong>Everyone pulls the latest code</strong>
+                <p>Abhimanyu and Arun download the updated code</p>
+                <div class="code-block">
+                  <code>git pull origin main</code>
+                  <button class="copy-btn" onclick="copyCode(this)">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESSENTIAL COMMANDS SECTION -->
+    <section id="commands" class="section">
+      <div class="container">
+        <h2>⌨️ Git Commands - Essential to Advanced</h2>
+
+        <div class="commands-tabs">
+          <button
+            class="tab-button active"
+            onclick="switchTab(event, 'basic-commands')"
+          >
+            🟢 Basic (80% of work)
+          </button>
+          <button
+            class="tab-button"
+            onclick="switchTab(event, 'intermediate-commands')"
+          >
+            🟡 Intermediate
+          </button>
+          <button
+            class="tab-button"
+            onclick="switchTab(event, 'advanced-commands')"
+          >
+            🔴 Advanced
+          </button>
+        </div>
+
+        <!-- BASIC COMMANDS -->
+        <div id="basic-commands" class="tab-content active">
+          <div class="commands-list">
+            <div class="command-item">
+              <div class="command-header">
+                <code>git config --global user.name "Abhimanyu"</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Set your name globally (used in
+                all commits)<br />
+                <strong>Why:</strong> Identify yourself in project history<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun, ✅ Manoj
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git init</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Create a new local Git
+                repository<br />
+                <strong>Why:</strong> Initialize version control for a new
+                project<br />
+                <strong>Real example:</strong> Manoj runs this when starting a
+                new company project<br />
+                <strong>Used by:</strong> ✅ Manoj (mainly)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git clone &lt;repository-url&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>Example:</strong>
+                <code>git clone https://github.com/techcorp/ecommerce.git</code
+                ><br />
+                <strong>What it does:</strong> Download a project from GitHub to
+                your computer<br />
+                <strong>Why:</strong> Get the entire project with all history<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun, ✅ Manoj (first
+                thing they do!)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git status</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Check which files have changed<br />
+                <strong>Why:</strong> See what you've modified before
+                committing<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun, ✅ Manoj (Use
+                this 50+ times a day!)<br />
+                <strong>Output:</strong> Shows untracked, modified, and staged
+                files
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git add &lt;filename&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>Example 1:</strong> <code>git add homepage.css</code> -
+                Add one file<br />
+                <strong>Example 2:</strong> <code>git add .</code> - Add ALL
+                changed files<br />
+                <strong>What it does:</strong> Stage files for commit (like
+                preparing them to be saved)<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun, ✅ Manoj (Every
+                single day!)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git commit -m "message"</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>Example:</strong>
+                <code>git commit -m "Fix login button styling"</code><br />
+                <strong>What it does:</strong> Save your changes permanently
+                with a description<br />
+                <strong>💡 Message tips:</strong><br />
+                ❌ Bad: "changes made" or "updated files"<br />
+                ✅ Good: "Add email validation" or "Fix homepage responsive
+                layout"<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun, ✅ Manoj
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git push origin &lt;branch-name&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>Example:</strong>
+                <code>git push origin feature/homepage-design</code><br />
+                <strong>What it does:</strong> Upload your local commits to
+                GitHub<br />
+                <strong>Why:</strong> Backup your work + share it with team<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun, ✅ Manoj
+                (Multiple times daily!)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git pull origin &lt;branch-name&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>Example:</strong> <code>git pull origin main</code
+                ><br />
+                <strong>What it does:</strong> Download latest changes from
+                GitHub<br />
+                <strong>Why:</strong> Get updates from your teammates<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun, ✅ Manoj
+                (Before starting work!)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git checkout -b &lt;branch-name&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>Example 1:</strong>
+                <code>git checkout -b feature/payment-system</code><br />
+                <strong>Example 2:</strong> <code>git checkout main</code> -
+                Switch to existing branch<br />
+                <strong>What it does:</strong> Create and switch to a new
+                branch<br />
+                <strong>Why:</strong> Work independently without affecting main
+                code<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun (Before every
+                new feature!)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git branch -a</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> List all branches<br />
+                <strong>Why:</strong> See what everyone is working on<br />
+                <strong>Used by:</strong> ✅ Manoj (To coordinate team)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git log</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> View commit history<br />
+                <strong>Why:</strong> Understand what changed and who changed
+                it<br />
+                <strong>Used by:</strong> ✅ Manoj (Debugging and tracking
+                changes)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERMEDIATE COMMANDS -->
+        <div id="intermediate-commands" class="tab-content">
+          <div class="commands-list">
+            <div class="command-item">
+              <div class="command-header">
+                <code>git merge &lt;branch-name&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>Example:</strong>
+                <code>git merge feature/homepage-design</code><br />
+                <strong>What it does:</strong> Combine changes from one branch
+                into another<br />
+                <strong>Used by:</strong> ✅ Manoj (When reviewing pull
+                requests)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git diff</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>Example:</strong> <code>git diff feature/payment</code
+                ><br />
+                <strong>What it does:</strong> See exact changes made (line by
+                line)<br />
+                <strong>Used by:</strong> ✅ Arun (Before committing important
+                changes)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git revert &lt;commit-hash&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Undo a specific commit
+                (safely)<br />
+                <strong>Why:</strong> Fix mistakes without losing history<br />
+                <strong>Used by:</strong> ✅ Manoj (For emergency fixes)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git stash</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Temporarily save uncommitted
+                changes<br />
+                <strong>Why:</strong> Switch branches without losing work<br />
+                <strong>Example scenario:</strong> Abhimanyu is working on
+                homepage, but needs to urgently fix a bug. He stashes his
+                changes, fixes the bug, then unstashes his work.<br />
+                <strong>Used by:</strong> ✅ Abhimanyu, ✅ Arun
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git reset --hard</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>⚠️ DANGEROUS!</strong> Use with caution<br />
+                <strong>What it does:</strong> Discard all uncommitted
+                changes<br />
+                <strong>Used by:</strong> ⚠️ Rarely used in teams
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADVANCED COMMANDS -->
+        <div id="advanced-commands" class="tab-content">
+          <div class="commands-list">
+            <div class="command-item">
+              <div class="command-header">
+                <code>git rebase &lt;branch-name&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Replay your commits on top of
+                another branch<br />
+                <strong>Why:</strong> Keep history linear and clean<br />
+                <strong>Used by:</strong> ✅ Manoj (Advanced team workflows)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git cherry-pick &lt;commit-hash&gt;</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Copy a specific commit from one
+                branch to another<br />
+                <strong>Why:</strong> Apply only certain changes<br />
+                <strong>Used by:</strong> ✅ Manoj (Emergency hotfixes)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git tag -a v1.0 -m "Release 1.0"</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Create a named version point<br />
+                <strong>Why:</strong> Mark releases and important milestones<br />
+                <strong>Used by:</strong> ✅ Manoj (For version releases)
+              </div>
+            </div>
+
+            <div class="command-item">
+              <div class="command-header">
+                <code>git hooks (pre-commit, pre-push)</code>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              </div>
+              <div class="command-explanation">
+                <strong>What it does:</strong> Automatic scripts that run before
+                commits/pushes<br />
+                <strong>Why:</strong> Enforce code quality and prevent bad
+                commits<br />
+                <strong>Used by:</strong> ✅ Manoj (Team-wide standards)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERVIEW PREPARATION SECTION -->
+    <section id="interview" class="section bg-light">
+      <div class="container">
+        <h2>🎤 Git & GitHub Interview Questions</h2>
+        <p class="intro-text">
+          Questions you'll definitely be asked in interviews!
+        </p>
+
+        <div class="interview-container">
+          <!-- Question 1 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q1: What's the difference between Git and GitHub?</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p>
+                <strong>Git:</strong> Version control software that runs on your
+                computer
+              </p>
+              <p>
+                <strong>GitHub:</strong> Cloud platform that hosts your Git
+                repositories
+              </p>
+              <p>
+                <strong>Simple analogy:</strong> Git is like a camera, GitHub is
+                like cloud storage for your photos
+              </p>
+              <p>
+                <strong>Real example:</strong> Abhimanyu uses Git on his laptop,
+                stores the code on GitHub for backup
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q2: Explain the Git workflow (add → commit → push)</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <div class="workflow-diagram">
+                <div class="workflow-step">
+                  <strong>1. Modify Files</strong>
+                  <p>Make changes to your code</p>
+                </div>
+                <div class="arrow">→</div>
+                <div class="workflow-step">
+                  <strong>2. git add</strong>
+                  <p>Stage changes for commit</p>
+                </div>
+                <div class="arrow">→</div>
+                <div class="workflow-step">
+                  <strong>3. git commit</strong>
+                  <p>Save changes locally with message</p>
+                </div>
+                <div class="arrow">→</div>
+                <div class="workflow-step">
+                  <strong>4. git push</strong>
+                  <p>Upload to GitHub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q3: What is a branch? Why do we need it?</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p><strong>Branch:</strong> Independent line of development</p>
+              <p><strong>Why?</strong></p>
+              <ul>
+                <li>🛡️ Protect main code - never break production</li>
+                <li>👥 Multiple developers work independently</li>
+                <li>🧪 Test features safely before merging</li>
+              </ul>
+              <p><strong>Company example:</strong></p>
+              <ul>
+                <li>Abhimanyu works on <code>feature/homepage</code></li>
+                <li>Arun works on <code>feature/payment</code></li>
+                <li>Both work simultaneously without conflicts!</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q4: What is a merge conflict? How do you resolve it?</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p>
+                <strong>Merge conflict:</strong> When Git can't automatically
+                combine changes
+              </p>
+              <p>
+                <strong>When it happens:</strong> Two developers modify the same
+                line in the same file
+              </p>
+              <div class="conflict-example">
+                <strong>Real scenario:</strong>
+                <p>Abhimanyu and Arun both edit the same button styling:</p>
+                <code>❌ Abhimanyu: background-color: blue;</code><br />
+                <code>❌ Arun: background-color: red;</code><br />
+                <code>✅ Resolution: Communicate and keep one version</code>
+              </div>
+              <p><strong>How to resolve:</strong></p>
+              <ol>
+                <li>Git marks the conflicting lines</li>
+                <li>Open the file and choose which version to keep</li>
+                <li>
+                  Remove conflict markers:
+                  <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>,
+                  <code>=======</code>,
+                  <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>
+                </li>
+                <li><code>git add</code> and <code>git commit</code></li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q5: What is a Pull Request (PR)? Why is it important?</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p>
+                <strong>Pull Request:</strong> Request to merge your branch into
+                main
+              </p>
+              <p><strong>Workflow:</strong></p>
+              <ol>
+                <li>Developer (Abhimanyu) completes feature on a branch</li>
+                <li>Creates a Pull Request on GitHub</li>
+                <li>Team lead (Manoj) reviews the code</li>
+                <li>If approved: merge into main</li>
+                <li>If needs fixes: request changes</li>
+              </ol>
+              <p><strong>Why it's important:</strong></p>
+              <ul>
+                <li>🔍 Code review - catch bugs before production</li>
+                <li>👥 Knowledge sharing among team</li>
+                <li>📋 Discussion and documentation</li>
+                <li>✅ Quality control</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q6: What's the difference between merge and rebase?</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p>
+                <strong>Merge:</strong> Combines two branches, creates a merge
+                commit
+              </p>
+              <p>
+                <strong>Rebase:</strong> Replays commits, keeps history linear
+              </p>
+              <table class="comparison-table">
+                <tr>
+                  <th>Aspect</th>
+                  <th>Merge</th>
+                  <th>Rebase</th>
+                </tr>
+                <tr>
+                  <td>History</td>
+                  <td>Shows all merges</td>
+                  <td>Linear, clean</td>
+                </tr>
+                <tr>
+                  <td>Safety</td>
+                  <td>Very safe</td>
+                  <td>Needs care with pushed commits</td>
+                </tr>
+                <tr>
+                  <td>Use case</td>
+                  <td>Most common in teams</td>
+                  <td>Advanced workflows</td>
+                </tr>
+              </table>
+              <p>
+                <strong>Company practice:</strong> Manoj usually prefers merge
+                for team safety
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q7: How do you undo changes in Git?</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p><strong>Different scenarios:</strong></p>
+              <table class="undo-table">
+                <tr>
+                  <th>Scenario</th>
+                  <th>Command</th>
+                  <th>What it does</th>
+                </tr>
+                <tr>
+                  <td>Undo uncommitted changes</td>
+                  <td><code>git checkout .</code></td>
+                  <td>Restore all files to last commit</td>
+                </tr>
+                <tr>
+                  <td>Unstage a file</td>
+                  <td><code>git reset HEAD filename</code></td>
+                  <td>Remove from staging area</td>
+                </tr>
+                <tr>
+                  <td>Undo last commit (local)</td>
+                  <td><code>git reset --soft HEAD~1</code></td>
+                  <td>Keep changes, undo commit</td>
+                </tr>
+                <tr>
+                  <td>Undo pushed commit</td>
+                  <td><code>git revert commit-hash</code></td>
+                  <td>Create new commit that reverses changes</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Question 8 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q8: Describe your experience with Git in a team project</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p>
+                <strong>Sample Answer (Based on our company scenario):</strong>
+              </p>
+              <div class="sample-answer">
+                <p>
+                  "I worked with a team of 3 developers (Abhimanyu, Arun, and
+                  Manoj) on an e-commerce project. We used Git to manage our
+                  codebase with the following workflow:
+                </p>
+                <ol>
+                  <li>
+                    Each developer created feature branches (feature/homepage,
+                    feature/payment)
+                  </li>
+                  <li>We committed regularly with meaningful messages</li>
+                  <li>
+                    We pushed to GitHub for backup and created Pull Requests
+                  </li>
+                  <li>
+                    Manoj, our team lead, reviewed all PR before merging to main
+                  </li>
+                  <li>We used git pull daily to stay synchronized</li>
+                  <li>
+                    We handled merge conflicts by communicating and selecting
+                    the correct code
+                  </li>
+                </ol>
+                <p>
+                  This process ensured code quality, prevented conflicts, and
+                  maintained a clean repository history."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 9 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q9: What are .gitignore files and why are they important?</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p>
+                <strong>.gitignore:</strong> File that tells Git which files to
+                ignore
+              </p>
+              <p><strong>Why important:</strong></p>
+              <ul>
+                <li>🚫 Don't commit secrets (API keys, passwords)</li>
+                <li>📦 Don't commit node_modules or dependencies</li>
+                <li>⚙️ Don't commit OS files (.DS_Store, Thumbs.db)</li>
+                <li>🔧 Keep repository clean and lightweight</li>
+              </ul>
+              <p><strong>Example .gitignore:</strong></p>
+              <div class="code-block">
+                <code
+                  >node_modules/<br />
+                  .env<br />
+                  .DS_Store<br />
+                  *.log<br />
+                  dist/</code
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 10 -->
+          <div class="interview-question">
+            <div class="q-header" onclick="toggleAnswer(this)">
+              <h3>Q10: Why is Git important for DevOps and CI/CD?</h3>
+              <span class="toggle-icon">▶</span>
+            </div>
+            <div class="q-answer">
+              <p><strong>Connection between Git and DevOps:</strong></p>
+              <ul>
+                <li>
+                  ✅ <strong>Automated Testing:</strong> Every push triggers
+                  tests automatically
+                </li>
+                <li>
+                  ✅ <strong>Automated Deployment:</strong> Approved code
+                  auto-deploys to production
+                </li>
+                <li>
+                  ✅ <strong>Rollback:</strong> Easy to revert to previous
+                  version if something breaks
+                </li>
+                <li>
+                  ✅ <strong>Audit Trail:</strong> Complete history of who
+                  changed what
+                </li>
+                <li>
+                  ✅ <strong>Team Collaboration:</strong> Foundation for
+                  team-based development
+                </li>
+              </ul>
+              <p>
+                <strong>Real example:</strong> When Manoj merges Abhimanyu's
+                code, it automatically:
+              </p>
+              <ol>
+                <li>Runs all tests</li>
+                <li>Checks code quality</li>
+                <li>If passed → automatically deploys to production servers</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK TIPS SECTION -->
+    <section class="section bg-light">
+      <div class="container">
+        <h2>💡 Pro Tips for Beginners</h2>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <div class="tip-number">1</div>
+            <h3>Commit Frequently</h3>
+            <p>
+              Make small, logical commits (not one huge commit at the end of the
+              day)
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-number">2</div>
+            <h3>Write Clear Messages</h3>
+            <p>
+              "Fix bug" → "Fix login button not responding on mobile devices"
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-number">3</div>
+            <h3>Pull Before Push</h3>
+            <p>
+              Always do <code>git pull</code> before <code>git push</code> to
+              avoid conflicts
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-number">4</div>
+            <h3>Never Force Push</h3>
+            <p>
+              <code>git push --force</code> is dangerous! Can destroy team's
+              work
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-number">5</div>
+            <h3>Use Branches</h3>
+            <p>Never work directly on main. Always create a feature branch</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-number">6</div>
+            <h3>Review Your Changes</h3>
+            <p>Use <code>git diff</code> before committing to catch mistakes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Become a Git Expert? 🚀</h2>
+        <p>
+          Start practicing these commands today and master Git in your next
+          project!
+        </p>
+        <button
+          class="cta-button large"
+          onclick="
+            alert(
+              'Practice by creating a test repository on GitHub and trying all these commands!',
+            )
+          "
+        >
+          Start Practicing Now
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Git & GitHub Complete Guide • Learn from Zero to Hero • For Beginners
+        </p>
+        <p>Remember: Every expert was once a beginner! 💪</p>
+      </div>
+    </footer>
+
+    <script src="git-github-script.js"></script>
+  </body>
+</html>

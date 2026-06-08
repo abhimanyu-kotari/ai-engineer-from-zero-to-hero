@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Basics for Beginners - Interactive Learning Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-icon">🤖</span>
+          <span>AI Basics</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#fundamentals" class="nav-link">Fundamentals</a></li>
+          <li><a href="#ml" class="nav-link">ML Types</a></li>
+          <li><a href="#dl" class="nav-link">Deep Learning</a></li>
+          <li><a href="#genai" class="nav-link">GenAI</a></li>
+          <li><a href="#agents" class="nav-link">AI Agents</a></li>
+          <li>
+            <a href="git-github-guide.html" class="nav-link">📚 Git & GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Master AI Fundamentals</h1>
+          <p class="hero-subtitle">
+            From Zero to AI Hero - Learn Modern AI Concepts Simply & Intuitively
+          </p>
+          <div class="hero-buttons">
+            <a href="#fundamentals" class="btn btn-primary"
+              >Start Learning AI</a
+            >
+            <a href="git-github-guide.html" class="btn btn-secondary"
+              >📚 Learn Git & GitHub</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="animated-shape shape-1"></div>
+          <div class="animated-shape shape-2"></div>
+          <div class="animated-shape shape-3"></div>
+          <div class="hero-icon">🧠</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Fundamentals Section -->
+    <section id="fundamentals" class="section">
+      <div class="section-header">
+        <h2>What is Artificial Intelligence?</h2>
+        <p>
+          The overarching field that teaches computers to perform tasks humans
+          excel at
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card fade-in-up">
+          <div class="card-icon">🎯</div>
+          <h3>AI Definition</h3>
+          <p>
+            Training computers to perform tasks like pattern recognition, visual
+            understanding, and text processing
+          </p>
+          <div class="card-divider"></div>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon">🌳</div>
+          <h3>AI Hierarchy</h3>
+          <p>
+            <strong>AI</strong> is the broadest field containing
+            <strong>Machine Learning</strong>, which includes Statistical ML and
+            Deep Learning
+          </p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon">🧩</div>
+          <h3>AI Components</h3>
+          <p>
+            Regular expressions, Rule-based systems, Robotics, and Machine
+            Learning all contribute to AI solutions
+          </p>
+        </div>
+      </div>
+
+      <!-- AI Tree Visualization -->
+      <div class="visualization ai-tree">
+        <h3>The AI Hierarchy Tree</h3>
+        <div class="tree-diagram">
+          <div class="tree-node root">
+            <span>Artificial Intelligence</span>
+            <div class="tree-children">
+              <div class="tree-node child">
+                <span>Machine Learning</span>
+                <div class="tree-children">
+                  <div class="tree-node grandchild">Statistical ML</div>
+                  <div class="tree-node grandchild">Deep Learning</div>
+                </div>
+              </div>
+              <div class="tree-node child">
+                <span>Other AI</span>
+                <div class="tree-children">
+                  <div class="tree-node grandchild">Regex</div>
+                  <div class="tree-node grandchild">Rule-Based</div>
+                  <div class="tree-node grandchild">Robotics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistical ML Section -->
+    <section id="ml" class="section alt-bg">
+      <div class="section-header">
+        <h2>Machine Learning Types</h2>
+        <p>
+          Understanding Statistical ML, Deep Learning, and their applications
+        </p>
+      </div>
+
+      <div class="comparison-container">
+        <div class="comparison-card">
+          <div class="comparison-header statistical">
+            <h3>Statistical Machine Learning</h3>
+            <span class="badge">Traditional</span>
+          </div>
+          <div class="comparison-content">
+            <div class="feature">
+              <span class="feature-icon">📊</span>
+              <strong>Data Type:</strong> Structured (tables, rows, columns)
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🧮</span>
+              <strong>Algorithms:</strong> Decision Trees, Linear Regression,
+              KNN, etc.
+            </div>
+            <div class="feature">
+              <span class="feature-icon">⚡</span>
+              <strong>Speed:</strong> Fast training, less compute power needed
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✅</span>
+              <strong>Use Case:</strong> Spam detection, Fraud classification,
+              Price prediction
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🛠️</span>
+              <strong>Tools:</strong> scikit-learn, XGBoost, pandas
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-card">
+          <div class="comparison-header deep">
+            <h3>Deep Learning</h3>
+            <span class="badge">Neural Networks</span>
+          </div>
+          <div class="comparison-content">
+            <div class="feature">
+              <span class="feature-icon">🖼️</span>
+              <strong>Data Type:</strong> Unstructured (images, videos, text)
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🧠</span>
+              <strong>Algorithms:</strong> Neural Networks, CNN, RNN,
+              Transformers
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🔥</span>
+              <strong>Speed:</strong> Slow training, requires GPU power
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✨</span>
+              <strong>Use Case:</strong> Image recognition, NLP, Video analysis
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🔧</span>
+              <strong>Tools:</strong> PyTorch, TensorFlow, Keras
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classification vs Regression -->
+    <section id="tasks" class="section">
+      <div class="section-header">
+        <h2>ML Tasks: Classification & Regression</h2>
+        <p>Two main categories of machine learning problems</p>
+      </div>
+
+      <div class="tasks-container">
+        <div class="task-card">
+          <div class="task-icon classification">📁</div>
+          <h3>Classification</h3>
+          <div class="task-description">
+            <p>
+              <strong>Goal:</strong> Assign input to one of predefined
+              categories
+            </p>
+            <p>
+              <strong>Output:</strong> Discrete categories (Yes/No, Cat/Dog,
+              Spam/Ham)
+            </p>
+          </div>
+          <div class="task-examples">
+            <h4>Examples:</h4>
+            <ul>
+              <li>✉️ Email spam detection</li>
+              <li>🖼️ Image classification (cat vs dog)</li>
+              <li>🚗 Damaged car detection</li>
+              <li>📰 News categorization</li>
+            </ul>
+          </div>
+          <div class="task-types">
+            <span class="type-badge">Binary</span>
+            <span class="type-badge">Multiclass</span>
+          </div>
+        </div>
+
+        <div class="task-card">
+          <div class="task-icon regression">📈</div>
+          <h3>Regression</h3>
+          <div class="task-description">
+            <p><strong>Goal:</strong> Predict continuous numerical value</p>
+            <p>
+              <strong>Output:</strong> Any number (925K, 923.5K, price range)
+            </p>
+          </div>
+          <div class="task-examples">
+            <h4>Examples:</h4>
+            <ul>
+              <li>🏠 Home price prediction</li>
+              <li>📊 Stock market forecasting</li>
+              <li>🌡️ Temperature prediction</li>
+              <li>📱 Sales forecasting</li>
+            </ul>
+          </div>
+          <div class="task-types">
+            <span class="type-badge">Linear</span>
+            <span class="type-badge">Non-linear</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training vs Inference -->
+      <div class="training-inference">
+        <h3>Machine Learning Phases</h3>
+        <div class="phases-grid">
+          <div class="phase-card">
+            <div class="phase-number">1</div>
+            <h4>Traditional Programming</h4>
+            <p class="phase-formula">Input + Logic = Output</p>
+            <p>You write the code (logic), computer produces output</p>
+          </div>
+          <div class="arrow">→</div>
+          <div class="phase-card">
+            <div class="phase-number">2</div>
+            <h4>Machine Learning</h4>
+            <p class="phase-formula">Input + Output = Logic</p>
+            <p>You provide data, ML derives the patterns/equations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supervised vs Unsupervised -->
+    <section id="learning" class="section alt-bg">
+      <div class="section-header">
+        <h2>Learning Paradigms</h2>
+        <p>Supervised and Unsupervised Machine Learning approaches</p>
+      </div>
+
+      <div class="learning-grid">
+        <div class="learning-card">
+          <div class="learning-icon supervised">🏷️</div>
+          <h3>Supervised Learning</h3>
+          <p class="learning-definition">
+            Labeled training data with input-output pairs
+          </p>
+
+          <div class="learning-detail">
+            <h4>📚 How it works:</h4>
+            <p>
+              Like training with a teacher who provides correct answers. You
+              need labeled data.
+            </p>
+          </div>
+
+          <div class="learning-detail">
+            <h4>🎯 Use Cases:</h4>
+            <ul class="detail-list">
+              <li>Spam vs Non-spam emails</li>
+              <li>Cat vs Dog image classification</li>
+              <li>House price prediction</li>
+            </ul>
+          </div>
+
+          <div class="learning-detail">
+            <h4>🔧 Algorithms:</h4>
+            <ul class="algo-list">
+              <li>Random Forest</li>
+              <li>XGBoost</li>
+              <li>Decision Trees</li>
+              <li>Linear Regression</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="learning-card">
+          <div class="learning-icon unsupervised">🎨</div>
+          <h3>Unsupervised Learning</h3>
+          <p class="learning-definition">
+            Unlabeled data without predefined output
+          </p>
+
+          <div class="learning-detail">
+            <h4>🧩 How it works:</h4>
+            <p>
+              Like a student discovering patterns independently. System finds
+              hidden patterns in data.
+            </p>
+          </div>
+
+          <div class="learning-detail">
+            <h4>🎯 Use Cases:</h4>
+            <ul class="detail-list">
+              <li>Customer segmentation</li>
+              <li>Document organization</li>
+              <li>Outlier detection</li>
+            </ul>
+          </div>
+
+          <div class="learning-detail">
+            <h4>🔧 Algorithms:</h4>
+            <ul class="algo-list">
+              <li>K-Means Clustering</li>
+              <li>DBScan</li>
+              <li>Hierarchical Clustering</li>
+              <li>PCA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toys Example Animation -->
+      <div class="visualization toys-example">
+        <h3>Unsupervised Learning Example: Toy Sorting</h3>
+        <div class="toys-container">
+          <div class="toys-scenario">
+            <h4>Supervised: "Sort by type"</h4>
+            <div class="toys-grid">
+              <div class="toy-item doll">🪆</div>
+              <div class="toy-item car">🚗</div>
+              <div class="toy-item truck">🚚</div>
+            </div>
+            <p>Clear instructions given</p>
+          </div>
+          <div class="toys-scenario">
+            <h4>Unsupervised: "Sort somehow"</h4>
+            <div class="toys-grid">
+              <div class="toy-item red">🔴</div>
+              <div class="toy-item blue">🔵</div>
+              <div class="toy-item other">⚪</div>
+            </div>
+            <p>System discovers patterns (e.g., by color)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep Learning & Neural Networks -->
+    <section id="dl" class="section">
+      <div class="section-header">
+        <h2>Deep Learning & Neural Networks</h2>
+        <p>Understanding how neural networks learn like the human brain</p>
+      </div>
+
+      <div class="dl-intro-card">
+        <h3>🧠 Why Neural Networks?</h3>
+        <div class="intro-content">
+          <p>
+            <strong>Problem:</strong> Traditional ML struggles with unstructured
+            data (images, videos, text)
+          </p>
+          <p>
+            <strong>Solution:</strong> Neural networks that work like the human
+            brain, detecting patterns nonlinearly
+          </p>
+        </div>
+      </div>
+
+      <!-- Koala Example -->
+      <div class="visualization koala-example">
+        <h3>The Koala Detection Team Analogy</h3>
+        <p class="analogy-intro">
+          Imagine a team of students learning to identify koalas...
+        </p>
+
+        <div class="team-visualization">
+          <div class="team-member">
+            <div class="member-role">👤 Mike</div>
+            <div class="member-task">Eye Detection</div>
+            <div class="score-display">Score: 0.8</div>
+          </div>
+          <div class="connector">→</div>
+          <div class="team-member">
+            <div class="member-role">👤 Serena</div>
+            <div class="member-task">Face Detection</div>
+            <div class="score-display">Score: 0.9</div>
+          </div>
+          <div class="connector">→</div>
+          <div class="team-member">
+            <div class="member-role">👤 Sergey</div>
+            <div class="member-task">Final Decision</div>
+            <div class="score-display">Is Koala: YES</div>
+          </div>
+        </div>
+
+        <div class="analogy-explanation">
+          <p><strong>Each person = Neuron</strong></p>
+          <p><strong>Each layer = Processing stage</strong></p>
+          <p><strong>Final decision = Output layer</strong></p>
+        </div>
+      </div>
+
+      <!-- Neural Network Structure -->
+      <div class="nn-structure">
+        <h3>Neural Network Architecture</h3>
+        <div class="nn-diagram">
+          <div class="nn-layer input-layer">
+            <div class="layer-label">Input Layer</div>
+            <div class="neurons">
+              <div class="neuron"></div>
+              <div class="neuron"></div>
+              <div class="neuron"></div>
+            </div>
+          </div>
+          <div class="connections"></div>
+          <div class="nn-layer hidden-layer">
+            <div class="layer-label">Hidden Layers</div>
+            <div class="neurons">
+              <div class="neuron"></div>
+              <div class="neuron"></div>
+              <div class="neuron"></div>
+              <div class="neuron"></div>
+            </div>
+          </div>
+          <div class="connections"></div>
+          <div class="nn-layer output-layer">
+            <div class="layer-label">Output Layer</div>
+            <div class="neurons">
+              <div class="neuron"></div>
+              <div class="neuron"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training Process -->
+      <div class="training-process">
+        <h3>How Neural Networks Learn: Backpropagation</h3>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h4>Forward Pass</h4>
+            <p>Network makes initial (random) prediction</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h4>Error Calculation</h4>
+            <p>Compare prediction with actual answer</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h4>Backward Pass</h4>
+            <p>Error is propagated back through network</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h4>Weight Update</h4>
+            <p>Network adjusts weights to reduce error</p>
+          </div>
+          <div class="step">
+            <div class="step-number">5</div>
+            <h4>Repeat</h4>
+            <p>Process repeats with thousands of examples</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DL Architectures -->
+    <section id="architectures" class="section alt-bg">
+      <div class="section-header">
+        <h2>Neural Network Architectures</h2>
+        <p>Different network designs for different problems</p>
+      </div>
+
+      <div class="architectures-grid">
+        <div class="arch-card">
+          <div class="arch-icon">🔀</div>
+          <h3>Feedforward Neural Networks</h3>
+          <p class="arch-analogy">
+            Like a juice machine: fruit in → juice out (one direction)
+          </p>
+          <div class="arch-features">
+            <p><strong>Flow:</strong> Input → Hidden → Output (no loops)</p>
+            <p><strong>Use:</strong> Basic classification, regression</p>
+          </div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-icon">🔄</div>
+          <h3>Recurrent Neural Networks (RNN)</h3>
+          <p class="arch-analogy">
+            Like preparing soup: add ingredient → taste → adjust
+          </p>
+          <div class="arch-features">
+            <p><strong>Flow:</strong> Sequential with feedback loops</p>
+            <p><strong>Use:</strong> Time series, text, sequential data</p>
+          </div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-icon">🖼️</div>
+          <h3>Convolutional Neural Networks (CNN)</h3>
+          <p class="arch-analogy">
+            Like examining an image with a magnifying glass
+          </p>
+          <div class="arch-features">
+            <p><strong>Flow:</strong> Specialized for spatial data</p>
+            <p><strong>Use:</strong> Image recognition, computer vision</p>
+          </div>
+        </div>
+
+        <div class="arch-card highlight">
+          <div class="arch-icon">⭐</div>
+          <h3>Transformers</h3>
+          <p class="arch-analogy">
+            Revolutionary: Parallel processing of all information
+          </p>
+          <div class="arch-features">
+            <p><strong>Flow:</strong> Attention mechanism for context</p>
+            <p><strong>Use:</strong> GPT, BERT, Modern GenAI</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DL Tools & Frameworks -->
+      <div class="tools-showcase">
+        <h3>Deep Learning Tools & Frameworks</h3>
+        <div class="tools-grid">
+          <div class="tool">
+            <div class="tool-icon">🔥</div>
+            <h4>PyTorch</h4>
+            <p>By Meta - Beginner-friendly, intuitive</p>
+          </div>
+          <div class="tool">
+            <div class="tool-icon">🤖</div>
+            <h4>TensorFlow</h4>
+            <p>By Google - Fine-grained control</p>
+          </div>
+          <div class="tool">
+            <div class="tool-icon">💻</div>
+            <h4>GPU Computing</h4>
+            <p>Essential hardware for training large models</p>
+          </div>
+          <div class="tool">
+            <div class="tool-icon">📚</div>
+            <h4>Keras</h4>
+            <p>High-level API, easy to use</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Generative AI Section -->
+    <section id="genai" class="section">
+      <div class="section-header">
+        <h2>Generative AI</h2>
+        <p>Creating new content: text, images, videos, and more</p>
+      </div>
+
+      <div class="genai-intro">
+        <h3>What Can Generative AI Do?</h3>
+        <div class="genai-capabilities">
+          <div class="capability">
+            <span class="cap-emoji">📝</span>
+            <div class="cap-content">
+              <h4>Text Generation</h4>
+              <p>Write resumes, essays, creative poetry</p>
+            </div>
+          </div>
+          <div class="capability">
+            <span class="cap-emoji">🎨</span>
+            <div class="cap-content">
+              <h4>Image Generation</h4>
+              <p>Create images from text descriptions (DALL-E, Midjourney)</p>
+            </div>
+          </div>
+          <div class="capability">
+            <span class="cap-emoji">🎬</span>
+            <div class="cap-content">
+              <h4>Video Generation</h4>
+              <p>Generate videos from text prompts (OpenAI Sora)</p>
+            </div>
+          </div>
+          <div class="capability">
+            <span class="cap-emoji">🎵</span>
+            <div class="cap-content">
+              <h4>Audio Generation</h4>
+              <p>Create music and sounds from text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GenAI Models -->
+      <div class="models-showcase">
+        <h3>Popular Generative AI Models</h3>
+        <div class="models-grid">
+          <div class="model-card">
+            <div class="model-type">Text Models</div>
+            <div class="model-list">
+              <div class="model">
+                <strong>ChatGPT / GPT-4</strong>
+                <p>By OpenAI</p>
+              </div>
+              <div class="model">
+                <strong>Claude</strong>
+                <p>By Anthropic (Amazon-backed)</p>
+              </div>
+              <div class="model">
+                <strong>Gemini</strong>
+                <p>By Google</p>
+              </div>
+              <div class="model">
+                <strong>Llama (Open Source)</strong>
+                <p>By Meta</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="model-card">
+            <div class="model-type">Image Models</div>
+            <div class="model-list">
+              <div class="model">
+                <strong>DALL-E</strong>
+                <p>By OpenAI</p>
+              </div>
+              <div class="model">
+                <strong>Stable Diffusion</strong>
+                <p>Open Source</p>
+              </div>
+              <div class="model">
+                <strong>Midjourney</strong>
+                <p>Specialized for art</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="model-card">
+            <div class="model-type">Specialized Models</div>
+            <div class="model-list">
+              <div class="model">
+                <strong>Sora (Video)</strong>
+                <p>By OpenAI</p>
+              </div>
+              <div class="model">
+                <strong>Music LM</strong>
+                <p>Audio by Google</p>
+              </div>
+              <div class="model">
+                <strong>AudioGen</strong>
+                <p>Sound generation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Traditional vs GenAI -->
+      <div class="traditional-vs-genai">
+        <h3>Traditional AI vs Generative AI</h3>
+        <div class="comparison-table">
+          <div class="comp-row header">
+            <div class="comp-cell"></div>
+            <div class="comp-cell">Traditional AI</div>
+            <div class="comp-cell">Generative AI</div>
+          </div>
+          <div class="comp-row">
+            <div class="comp-cell"><strong>Purpose</strong></div>
+            <div class="comp-cell">Analyze, predict, classify</div>
+            <div class="comp-cell">Generate new content</div>
+          </div>
+          <div class="comp-row">
+            <div class="comp-cell"><strong>Output</strong></div>
+            <div class="comp-cell">Yes/No, labels, numbers</div>
+            <div class="comp-cell">Creative text, images, videos</div>
+          </div>
+          <div class="comp-row">
+            <div class="comp-cell"><strong>Models</strong></div>
+            <div class="comp-cell">Decision Trees, SVM, Neural Nets</div>
+            <div class="comp-cell">LLMs, GANs, Diffusion Models</div>
+          </div>
+          <div class="comp-row">
+            <div class="comp-cell"><strong>Training</strong></div>
+            <div class="comp-cell">Supervised learning with labels</div>
+            <div class="comp-cell">Pre-training on massive datasets</div>
+          </div>
+          <div class="comp-row">
+            <div class="comp-cell"><strong>Example</strong></div>
+            <div class="comp-cell">Spam detector, Image classifier</div>
+            <div class="comp-cell">ChatGPT, DALL-E, Sora</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Large Language Models -->
+    <section id="llm" class="section alt-bg">
+      <div class="section-header">
+        <h2>Large Language Models (LLMs)</h2>
+        <p>The powerhouse behind modern AI applications</p>
+      </div>
+
+      <!-- Stochastic Parrot Analogy -->
+      <div class="visualization parrot-analogy">
+        <h3>🦜 The Stochastic Parrot Analogy</h3>
+        <div class="analogy-box">
+          <p><strong>Buddy the Parrot:</strong></p>
+          <ul>
+            <li>Listens to conversations and learns patterns</li>
+            <li>Predicts next word based on probability</li>
+            <li>Doesn't understand meaning, just statistics</li>
+            <li>Can generate human-like responses</li>
+          </ul>
+          <p style="margin-top: 15px; font-style: italic">
+            LLMs work similarly - they predict the next word based on patterns
+            learned from massive text data!
+          </p>
+        </div>
+      </div>
+
+      <!-- LLM Characteristics -->
+      <div class="llm-features">
+        <h3>What Makes LLMs Powerful?</h3>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-number">1</div>
+            <h4>Massive Scale</h4>
+            <p>
+              Trained on billions of text examples from internet, books,
+              articles
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-number">2</div>
+            <h4>Trillions of Parameters</h4>
+            <p>
+              Complex neural networks with enormous number of adjustable values
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-number">3</div>
+            <h4>Pattern Recognition</h4>
+            <p>Can understand context, syntax, and semantic relationships</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-number">4</div>
+            <h4>RLHF Training</h4>
+            <p>
+              Reinforcement Learning from Human Feedback makes them safer and
+              better
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LLM Lifecycle -->
+      <div class="llm-lifecycle">
+        <h3>LLM Development Process</h3>
+        <div class="lifecycle-steps">
+          <div class="lifecycle-step">
+            <div class="step-icon">📊</div>
+            <h4>Pre-training</h4>
+            <p>Train on massive text corpus (Internet, books)</p>
+          </div>
+          <div class="lifecycle-arrow">→</div>
+          <div class="lifecycle-step">
+            <div class="step-icon">🎓</div>
+            <h4>Supervised Fine-tuning</h4>
+            <p>Train on high-quality task-specific data</p>
+          </div>
+          <div class="lifecycle-arrow">→</div>
+          <div class="lifecycle-step">
+            <div class="step-icon">👥</div>
+            <h4>RLHF</h4>
+            <p>Human feedback to reduce toxic outputs</p>
+          </div>
+          <div class="lifecycle-arrow">→</div>
+          <div class="lifecycle-step">
+            <div class="step-icon">🚀</div>
+            <h4>Deployment</h4>
+            <p>Ready for production use</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Important Note -->
+      <div class="important-note">
+        <h4>⚠️ Important: LLMs are NOT conscious</h4>
+        <p>
+          LLMs don't have subjective experience, emotions, or true
+          understanding. They work purely based on statistical patterns in
+          training data. Their seeming intelligence is pattern matching at
+          scale.
+        </p>
+      </div>
+    </section>
+
+    <!-- AI Agents Section -->
+    <section id="agents" class="section">
+      <div class="section-header">
+        <h2>AI Agents & Agentic AI</h2>
+        <p>From reactive chatbots to autonomous intelligent systems</p>
+      </div>
+
+      <!-- Three Types of Chatbots -->
+      <div class="chatbot-evolution">
+        <h3>Evolution of AI Chatbots</h3>
+        <div class="evolution-container">
+          <div class="evolution-stage stage-1">
+            <div class="stage-number">1</div>
+            <h4>RAG Chatbot</h4>
+            <p><strong>Type:</strong> Reactive Q&A</p>
+            <div class="capability-list">
+              <p>✅ Answer policy questions</p>
+              <p>✅ Access external knowledge</p>
+              <p>❌ Cannot perform actions</p>
+            </div>
+            <p class="example">Example: "How many vacation days?"</p>
+          </div>
+
+          <div class="arrow-vertical">↓</div>
+
+          <div class="evolution-stage stage-2">
+            <div class="stage-number">2</div>
+            <h4>Tool-Augmented Chatbot</h4>
+            <p><strong>Type:</strong> Can use tools</p>
+            <div class="capability-list">
+              <p>✅ Access external knowledge</p>
+              <p>✅ Perform simple actions</p>
+              <p>❌ Cannot plan multi-step tasks</p>
+            </div>
+            <p class="example">Example: "Apply for 2 days leave"</p>
+          </div>
+
+          <div class="arrow-vertical">↓</div>
+
+          <div class="evolution-stage stage-3">
+            <div class="stage-number">3</div>
+            <h4>AI Agent</h4>
+            <p><strong>Type:</strong> Autonomous &amp; intelligent</p>
+            <div class="capability-list">
+              <p>✅ Multi-step planning</p>
+              <p>✅ Autonomous decision making</p>
+              <p>✅ Goal-oriented reasoning</p>
+            </div>
+            <p class="example">Example: "Onboard new employee"</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agent Characteristics -->
+      <div class="agent-characteristics">
+        <h3>Key Characteristics of AI Agents</h3>
+        <div class="char-grid">
+          <div class="char-card">
+            <div class="char-icon">🧠</div>
+            <h4>Reasoning</h4>
+            <p>Can understand complex problems and break them down</p>
+          </div>
+          <div class="char-card">
+            <div class="char-icon">🎯</div>
+            <h4>Goal-Oriented</h4>
+            <p>Works towards specific objectives autonomously</p>
+          </div>
+          <div class="char-card">
+            <div class="char-icon">🔧</div>
+            <h4>Tool Usage</h4>
+            <p>Can access and use multiple APIs and systems</p>
+          </div>
+          <div class="char-card">
+            <div class="char-icon">💭</div>
+            <h4>Memory</h4>
+            <p>Maintains context and learns from interactions</p>
+          </div>
+          <div class="char-card">
+            <div class="char-icon">🚀</div>
+            <h4>Autonomy</h4>
+            <p>Takes actions without waiting for explicit instructions</p>
+          </div>
+          <div class="char-card">
+            <div class="char-icon">🔄</div>
+            <h4>Adaptive</h4>
+            <p>Learns and improves from feedback</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agent vs Agentic AI -->
+      <div class="agent-vs-agentic">
+        <h3>AI Agent vs Agentic AI System</h3>
+        <div class="comparison-simple">
+          <div class="compare-item">
+            <div class="compare-title">🤖 AI Agent</div>
+            <p>
+              <strong>Definition:</strong> Single component that can perceive
+              environment, make decisions, and take actions
+            </p>
+            <div class="traits">
+              <span class="trait">Can think</span>
+              <span class="trait">Can decide</span>
+              <span class="trait">Can act</span>
+            </div>
+          </div>
+          <div class="compare-item">
+            <div class="compare-title">🏗️ Agentic AI System</div>
+            <p>
+              <strong>Definition:</strong> Complete system with one or more
+              agents, doing complex reasoning and multi-step actions
+            </p>
+            <div class="traits">
+              <span class="trait">Multiple agents</span>
+              <span class="trait">Complex workflows</span>
+              <span class="trait">Autonomous execution</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GenAI vs Agentic AI -->
+      <div class="genai-vs-agentic">
+        <h3>Generative AI vs Agentic AI</h3>
+        <div class="comparison-extended">
+          <div class="comp-box genai-box">
+            <h4>Generative AI</h4>
+            <ul class="comp-list">
+              <li><strong>Purpose:</strong> Create new content</li>
+              <li><strong>Interaction:</strong> Reactive (Q&A)</li>
+              <li><strong>Planning:</strong> Minimal</li>
+              <li><strong>Tools:</strong> Limited access</li>
+              <li><strong>Autonomy:</strong> Low</li>
+              <li><strong>Example:</strong> ChatGPT answering questions</li>
+            </ul>
+          </div>
+          <div class="comp-box agentic-box">
+            <h4>Agentic AI</h4>
+            <ul class="comp-list">
+              <li><strong>Purpose:</strong> Achieve goals autonomously</li>
+              <li><strong>Interaction:</strong> Proactive (planning)</li>
+              <li><strong>Planning:</strong> Multi-step reasoning</li>
+              <li><strong>Tools:</strong> Heavy usage</li>
+              <li><strong>Autonomy:</strong> High (can act independently)</li>
+              <li><strong>Example:</strong> Employee onboarding workflow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Building Agents -->
+      <div class="building-agents">
+        <h3>How to Build AI Agents?</h3>
+        <div class="building-methods">
+          <div class="method">
+            <div class="method-icon">💻</div>
+            <h4>Code-Based</h4>
+            <p>
+              <strong>Frameworks:</strong> AutoGen, Google Agent Dev Kit, OpenAI
+              SDK
+            </p>
+            <p>Build custom agents with full control using Python</p>
+          </div>
+          <div class="method">
+            <div class="method-icon">🖱️</div>
+            <h4>Low-Code/No-Code</h4>
+            <p><strong>Tools:</strong> N8N, Zapier, Make.com</p>
+            <p>Drag-and-drop workflow builder without coding</p>
+          </div>
+        </div>
+
+        <!-- N8N Example -->
+        <div class="tool-example">
+          <h4>Example: Employee Onboarding with N8N</h4>
+          <div class="workflow-steps">
+            <div class="wf-step">
+              <span class="wf-num">1</span>
+              <p>Trigger: New employee joining</p>
+            </div>
+            <div class="wf-arrow">→</div>
+            <div class="wf-step">
+              <span class="wf-num">2</span>
+              <p>Create checklist in HR system</p>
+            </div>
+            <div class="wf-arrow">→</div>
+            <div class="wf-step">
+              <span class="wf-num">3</span>
+              <p>Schedule welcome meeting</p>
+            </div>
+            <div class="wf-arrow">→</div>
+            <div class="wf-step">
+              <span class="wf-num">4</span>
+              <p>Send IT access requests</p>
+            </div>
+            <div class="wf-arrow">→</div>
+            <div class="wf-step">
+              <span class="wf-num">5</span>
+              <p>Order equipment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>Ready to Dive Deeper into AI?</h2>
+        <p>
+          You've learned the fundamentals. Now explore practical implementations
+          and advanced topics.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary-large">Start Coding Project</a>
+          <a href="#" class="btn btn-secondary-large">View Code Examples</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          &copy; 2024 AI Basics for Beginners - Interactive Learning Platform
+        </p>
+        <p>Learn • Understand • Build the future with AI</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
